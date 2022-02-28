@@ -5,9 +5,9 @@ status=["yes","no"]
 products=[]
 instances=[]
 distChanel=["web","phyzi"]
-with open("D:\\new.charge.csv", mode="w", encoding='utf-8') as w_file:
-    with open("instance.csv", encoding='utf-8') as r_file:
-        with open("product.csv", encoding='utf-8') as r2_file:
+with open("D:\\new\\charge.csv", mode="w", encoding='utf-8') as w_file:
+    with open("D:\\new\\instance.csv", encoding='utf-8') as r_file:
+        with open("D:\\new\\product.csv", encoding='utf-8') as r2_file:
             file_writer = csv.writer(w_file, delimiter = ",")
             file_writer.writerow(["id","id-instance", "id-product", "count","дата",
             "цена", "тип"])
