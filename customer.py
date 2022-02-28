@@ -13,7 +13,7 @@ status=["yes","no"]
 category=["Business","physical"]
 city=["Sao-Paulo","Rio","Brasilia","Salvador","Fortalesa"]
 language=["portuguese","russian"]
-with open("D:\\new.first.csv", mode="w", encoding='utf-8') as w_file:
+with open("D:\\new\\customer.csv", mode="w", encoding='utf-8') as w_file:
     file_writer = csv.writer(w_file, delimiter = ",")
     file_writer.writerow(["id","имя", "фамилия", "дата рождения","пол",
                           "промо-согласие","карта", "email","телефон",
