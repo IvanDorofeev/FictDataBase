@@ -5,7 +5,7 @@ products=["drive","forsage","extrime","1+1","family","one+12","all-world","no-li
 categories=["web","phone"]
 types=["tariff","add-on"]
 recurrent=["regular","once"]
-with open("D:\\new.product.csv", mode="w", encoding='utf-8') as w_file:
+with open("D:\\new\\product.csv", mode="w", encoding='utf-8') as w_file:
     file_writer = csv.writer(w_file, delimiter = ",")
     file_writer.writerow(["id","имя", "категория", "тип","оплата",
     "цена-звонок", "цена-смс","цена-интернет", "кол-звонок", "кол-смс", "кол-интернет"])
