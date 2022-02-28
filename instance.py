@@ -5,7 +5,7 @@ status=["yes","no"]
 products=["drive","forsage","extrime","1+1","all-world","one+12","no-limit","wild","auto","family"]
 customers=[i for i in range(100)]
 distChanel=["web","phyzi"]
-with open("D:\\new.instance.csv", mode="w", encoding='utf-8') as w_file:
+with open("D:\\new\\instance.csv", mode="w", encoding='utf-8') as w_file:
     file_writer = csv.writer(w_file, delimiter = ",")
     file_writer.writerow(["id","id-customer", "id-product", "since","окончание",
     "статус", "канал распр"])
