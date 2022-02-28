@@ -9,9 +9,9 @@ direction=["исход","вход"]
 roaming=["yes","no"]
 custCall=[i for i in range(100)]
 custCalled=[i for i in range(100)]
-with open("D:\\new.event.csv", mode="w", encoding='utf-8') as w_file:
-    with open("instance.csv", encoding='utf-8') as r1_file:
-        with open("product.csv", encoding='utf-8') as r2_file:
+with open("D:\\new\\event.csv", mode="w", encoding='utf-8') as w_file:
+    with open("D:\\new\\instance.csv", encoding='utf-8') as r1_file:
+        with open("D:\\new\\product.csv", encoding='utf-8') as r2_file:
             file_writer = csv.writer(w_file, delimiter = ",")
             file_reader1 = csv.reader(r1_file, delimiter = ",")
             file_reader2 = csv.reader(r2_file, delimiter = ",")
