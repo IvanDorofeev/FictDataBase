@@ -3,8 +3,8 @@ import numpy as np
 import datetime as dt
 customers=[]
 distChanel=["web","phyzi"]
-with open("D:\\new.payment.csv", mode="w", encoding='utf-8') as w_file:
-    with open("customer.csv", encoding='utf-8') as r_file:
+with open("D:\\new\\payment.csv", mode="w", encoding='utf-8') as w_file:
+    with open("D:\\new\\customer.csv", encoding='utf-8') as r_file:
         file_writer = csv.writer(w_file, delimiter = ",")
         file_writer.writerow(["id","id-customer", "метод", "дата","количество"])
         file_reader = csv.reader(r_file, delimiter = ",")
