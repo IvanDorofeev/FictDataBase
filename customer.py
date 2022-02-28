@@ -42,7 +42,7 @@ with open("D:\\new\\customer.csv", mode="w", encoding='utf-8') as w_file:
         mas[0]=i
         mas[1]=firstName[rand10[0]]
         mas[2]=lastName[rand10[1]]
-        mas[3]=oldDate.strftime("%Y/%m/%d")
+        mas[3]=oldDate.strftime("%Y-%m-%d")
         mas[4]=gender[rand2[0]]
         mas[5]=agreeForPromo[rand2[1]]
         mas[6]=autopayCard[rand2[2]]
@@ -53,7 +53,7 @@ with open("D:\\new\\customer.csv", mode="w", encoding='utf-8') as w_file:
         str(rand10[7])+str(rand10[8])+"-"+str(rand10[9])+str(rand10[10])
         mas[9]=status[rand2[4]]
         mas[10]=category[rand2[5]]
-        mas[11]=newDate.strftime("%Y/%m/%d")
+        mas[11]=newDate.strftime("%Y-%m-%d")
         index=np.random.randint(1,12, size=1)[0]
         if index==0:
             mas[12]=city[4]
@@ -66,5 +66,5 @@ with open("D:\\new\\customer.csv", mode="w", encoding='utf-8') as w_file:
         else:
             mas[12]=city[0]
         mas[13]=language[int(rand10[11]/9)]
-        mas[14]=termDate.strftime("%Y/%m/%d")
+        mas[14]=termDate.strftime("%Y-%m-%d")
         file_writer.writerow(mas)
