@@ -41,7 +41,7 @@ with open("D:\\new\\customer.csv", mode="w", encoding='utf-8') as w_file:
                          np.random.randint(1,29, size=1)[0])
         mas[0]=i
         mas[1]=firstName[rand10[0]]
-        mas[2]=firstName[rand10[1]]
+        mas[2]=lastName[rand10[1]]
         mas[3]=oldDate.strftime("%Y/%m/%d")
         mas[4]=gender[rand2[0]]
         mas[5]=agreeForPromo[rand2[1]]
